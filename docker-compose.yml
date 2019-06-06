@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  lamp_server:
+    build: .
+    environment:
+        TZ: America/Los_Angeles
+        XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9000 remote_autostart=1
+        PHP_IDE_CONFIG: serverName=host.docker.internal
+        XDEBUG_CRON: remote_host=host.docker.internal remote_port=9001 remote_autostart=1
+        APPLICATION_ENV: "local"
+        APP_SITE_ENV: "local"
+    ports:
+      - 443:443
+      - 3306:3306
+      - 80:80
+    volumes:
+      - ./:/var/www
