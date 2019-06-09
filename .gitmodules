@@ -1,0 +1,3 @@
+[submodule "serverP"]
+	path = serverP
+	url = git@github.com:AOSiraj/zend-skeleton.git
