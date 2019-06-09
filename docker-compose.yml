@@ -5,7 +5,7 @@ services:
     build: .
     environment:
         TZ: America/Los_Angeles
-        XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9000 remote_autostart=1
+        XDEBUG_CONFIG: remote_host=host.docker.internal remote_port=9002 remote_autostart=1
         PHP_IDE_CONFIG: serverName=host.docker.internal
         XDEBUG_CRON: remote_host=host.docker.internal remote_port=9001 remote_autostart=1
         APPLICATION_ENV: "local"

@@ -12,8 +12,7 @@ RUN apt-get update \
        && rm -rf /tmp/pear \
        && docker-php-ext-enable redis \
     && a2enmod rewrite ssl \
-    && docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ \
-    && docker-php-ext-install gd zip ldap
+    && docker-php-ext-install gd zip
 
 ############################################################################
 # Install SSH Deploy keys

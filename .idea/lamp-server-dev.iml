@@ -4,6 +4,8 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/server/module/Application/src" isTestSource="false" packagePrefix="Application\" />
       <sourceFolder url="file://$MODULE_DIR$/server/module/Application/test" isTestSource="true" packagePrefix="ApplicationTest\" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/aos/autoloader" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/aos/psr4" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/behat/gherkin" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/codeception/codeception" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/codeception/phpunit-wrapper" />
